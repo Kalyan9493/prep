@@ -1,11 +1,8 @@
 package com.prep.base.repository;
 
+import com.prep.base.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.prep.base.entity.QuestionType;
-
 @Repository
-public interface QuestionTypeRepository extends JpaRepository<QuestionType, Long>{
-
-}
+public interface RoleRepository extends JpaRepository<Role, Integer> {}
