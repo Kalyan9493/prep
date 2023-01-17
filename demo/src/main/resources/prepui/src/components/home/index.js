@@ -11,7 +11,7 @@ const Home = () => {
                 <h2>I am  Kalyan Kumar Reddy</h2>
                 <h2>Software Engineer</h2>
             </div>
-            <div >
+            <div>
                 <img className='icon' src={IconUrl}></img>
             </div>
         </div>

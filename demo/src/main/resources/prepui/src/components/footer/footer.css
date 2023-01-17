@@ -9,9 +9,8 @@
   }
 
   .linkedin {
-    margin-top: 20px;
-    height: 100px;
-    width: 100px;
+    margin-top: 50px;
+    display: flex
   }
 
   .linkedin_icon {
