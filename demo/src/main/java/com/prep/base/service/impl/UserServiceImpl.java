@@ -68,6 +68,11 @@ public class UserServiceImpl implements UserService {
         if(existingUser != null){
             throw new ExceptionHandler(HttpStatus.CONFLICT, "EmailId or Mobile Number already exists");
         }
+        if(userDto.getRoles() == null){
+            List<Role> defaultRolesList = new ArrayList<>();
+            defaultRolesList.add(roleRepository.getRoleByRoleName("USER"));
+            userDto.setRoles(defaultRolesList);
+        }
     }
 
     @Override
